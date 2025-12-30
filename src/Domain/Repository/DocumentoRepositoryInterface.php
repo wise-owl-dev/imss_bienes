@@ -6,8 +6,8 @@ use App\Domain\Entity\Documento;
 
 interface DocumentoRepositoryInterface extends RepositoryInterface
 {
-    public function buscarPorFolio(string $folio): ?Documento;
+    public function buscarPorFolio($folio);
 
-    public function buscarPorTipo(string $tipo): array;
+    public function buscarPorTipo($tipo);
 }
 

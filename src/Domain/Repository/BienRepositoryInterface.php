@@ -6,6 +6,6 @@ use App\Domain\Entity\Bien;
 
 interface BienRepositoryInterface extends RepositoryInterface
 {
-    public function buscarPorDocumento(int $documentoId): array;
+    public function buscarPorDocumento($documentoId);
 }
 
