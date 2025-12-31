@@ -4,6 +4,7 @@
 namespace App\Presentation\Controller;
 
 use App\Domain\Repository\BienRepositoryInterface;
+use Exception; // <<<< AGREGADO
 
 class BienController
 {
@@ -139,12 +140,12 @@ class BienController
             $this->bienRepository->persist($bien);
 
             // Redireccionar con mensaje de éxito
-            header('Location: /bienes?success=1');
+            header('Location: ' . BASE_URL . '/bienes?success=1');
             exit;
 
         } catch (Exception $e) {
             $_SESSION['error'] = $e->getMessage();
-            header('Location: /bienes/crear');
+            header('Location: ' . BASE_URL . '/bienes/crear');
             exit;
         }
     }
@@ -257,7 +258,7 @@ class BienController
         
         if (!$bien) {
             $_SESSION['error'] = 'Bien no encontrado';
-            header('Location: /bienes');
+            header('Location: ' . BASE_URL . '/bienes');
             exit;
         }
 
@@ -307,12 +308,12 @@ class BienController
 
             // Redireccionar con mensaje de éxito
             $_SESSION['success'] = 'Los cambios se guardaron correctamente';
-            header('Location: /bienes/' . $id . '/editar');
+            header('Location: ' . BASE_URL . '/bienes/' . $id . '/editar');
             exit;
 
         } catch (Exception $e) {
             $_SESSION['error'] = $e->getMessage();
-            header('Location: /bienes/' . $id . '/editar');
+            header('Location: ' . BASE_URL . '/bienes/' . $id . '/editar');
             exit;
         }
     }
@@ -337,12 +338,12 @@ class BienController
             // Aquí deberías implementar el método delete en el repositorio
             // Por ahora, redireccionamos con mensaje
             $_SESSION['error'] = 'Función de eliminación no implementada aún';
-            header('Location: /bienes');
+            header('Location: ' . BASE_URL . '/bienes');
             exit;
 
         } catch (Exception $e) {
             $_SESSION['error'] = $e->getMessage();
-            header('Location: /bienes');
+            header('Location: ' . BASE_URL . '/bienes');
             exit;
         }
     }

@@ -58,27 +58,27 @@
                 
                 <!-- Navigation Links -->
                 <div class="flex flex-col gap-2">
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="/">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="<?= BASE_URL ?>/" >
                         <span class="material-symbols-outlined text-[24px] group-hover:text-imss-green dark:group-hover:text-primary">home</span>
                         <p class="text-sm font-medium leading-normal group-hover:text-[#111814] dark:group-hover:text-white">Inicio</p>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-imss-green/5 dark:bg-primary/10 text-imss-green dark:text-primary transition-colors" href="/bienes">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-imss-green/5 dark:bg-primary/10 text-imss-green dark:text-primary transition-colors" href="<?= BASE_URL ?>/bienes">
                         <span class="material-symbols-outlined icon-filled text-[24px]">inventory_2</span>
                         <p class="text-sm font-bold leading-normal">Inventario</p>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="/documentos">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="<?= BASE_URL ?>/documentos">
                         <span class="material-symbols-outlined text-[24px] group-hover:text-imss-green dark:group-hover:text-primary">description</span>
                         <p class="text-sm font-medium leading-normal group-hover:text-[#111814] dark:group-hover:text-white">Resguardos</p>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="/bajas">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="<?= BASE_URL ?>/bajas">
                         <span class="material-symbols-outlined text-[24px] group-hover:text-imss-green dark:group-hover:text-primary">delete</span>
                         <p class="text-sm font-medium leading-normal group-hover:text-[#111814] dark:group-hover:text-white">Bajas</p>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="/reportes">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="<?= BASE_URL ?>/reportes">
                         <span class="material-symbols-outlined text-[24px] group-hover:text-imss-green dark:group-hover:text-primary">bar_chart</span>
                         <p class="text-sm font-medium leading-normal group-hover:text-[#111814] dark:group-hover:text-white">Reportes</p>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="/configuracion">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#608a75] dark:text-[#9CA3AF] hover:bg-[#f0f5f2] dark:hover:bg-[#1f362b] transition-colors group" href="<?= BASE_URL ?>/configuracion">
                         <span class="material-symbols-outlined text-[24px] group-hover:text-imss-green dark:group-hover:text-primary">settings</span>
                         <p class="text-sm font-medium leading-normal group-hover:text-[#111814] dark:group-hover:text-white">Configuración</p>
                     </a>
@@ -131,9 +131,9 @@
             <div class="max-w-[1200px] mx-auto flex flex-col gap-6 pb-20">
                 <!-- Breadcrumbs -->
                 <div class="flex flex-wrap gap-2 text-sm">
-                    <a class="text-[#608a75] hover:text-imss-green dark:text-[#8baea0] dark:hover:text-primary font-medium transition-colors" href="/">Inicio</a>
+                    <a class="text-[#608a75] hover:text-imss-green dark:text-[#8baea0] dark:hover:text-primary font-medium transition-colors" href="<?= BASE_URL ?>/">Inicio</a>
                     <span class="text-[#608a75] dark:text-[#8baea0] font-medium">/</span>
-                    <a class="text-[#608a75] hover:text-imss-green dark:text-[#8baea0] dark:hover:text-primary font-medium transition-colors" href="/bienes">Inventario</a>
+                    <a class="text-[#608a75] hover:text-imss-green dark:text-[#8baea0] dark:hover:text-primary font-medium transition-colors" href="<?= BASE_URL ?>/bienes">Inventario</a>
                     <span class="text-[#608a75] dark:text-[#8baea0] font-medium">/</span>
                     <span class="text-[#111814] dark:text-white font-semibold">Edición #<?php echo htmlspecialchars($bien->getIdentificacionNumero() ?: $bien->getId()); ?></span>
                 </div>
@@ -203,7 +203,7 @@
 
                     <!-- Form Content -->
                     <div class="p-6 lg:p-8">
-                        <form action="/bienes/<?php echo $bien->getId(); ?>/actualizar" method="POST" enctype="multipart/form-data" class="flex flex-col gap-8">
+                        <form action="<?= BASE_URL ?>/bienes/<?php echo $bien->getId(); ?>/actualizar" method="POST" enctype="multipart/form-data" class="flex flex-col gap-8">
                             <!-- Section 1: Identification -->
                             <div>
                                 <h3 class="text-lg font-bold text-[#111814] dark:text-white mb-4 flex items-center gap-2">
@@ -289,12 +289,12 @@
 
                     <!-- Action Footer -->
                     <div class="bg-gray-50 dark:bg-[#12241b] px-6 py-4 border-t border-[#e0e6e3] dark:border-[#2a4035] flex justify-between items-center">
-                        <button onclick="if(confirm('¿Está seguro de eliminar este bien?')) { window.location.href='/bienes/<?php echo $bien->getId(); ?>/eliminar'; }" class="text-red-600 dark:text-red-400 text-sm font-medium hover:underline flex items-center gap-1" type="button">
+                        <button onclick="if(confirm('¿Está seguro de eliminar este bien?')) { window.location.href='<?= BASE_URL ?>/bienes/<?php echo $bien->getId(); ?>/eliminar'; }" class="text-red-600 dark:text-red-400 text-sm font-medium hover:underline flex items-center gap-1" type="button">
                             <span class="material-symbols-outlined text-[18px]">delete</span>
                             Eliminar Bien
                         </button>
                         <div class="flex gap-3">
-                            <a href="/bienes" class="px-6 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 text-sm font-medium bg-white dark:bg-transparent hover:bg-gray-50 dark:hover:bg-white/5 transition-colors shadow-sm">
+                            <a href="<?= BASE_URL ?>/bienes" class="px-6 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 text-sm font-medium bg-white dark:bg-transparent hover:bg-gray-50 dark:hover:bg-white/5 transition-colors shadow-sm">
                                 Cancelar
                             </a>
                             <button onclick="document.querySelector('form').submit()" class="px-6 py-2.5 rounded-lg bg-primary hover:bg-[#0be075] text-[#111814] text-sm font-bold shadow-md shadow-primary/20 transition-all transform active:scale-95 flex items-center gap-2" type="button">

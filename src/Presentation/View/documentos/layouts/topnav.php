@@ -15,10 +15,10 @@
                 
                 <!-- Navigation -->
                 <nav class="hidden md:flex items-center gap-8">
-                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href= "<?= BASE_URL ?>/documentos" >Inicio</a>
+                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href="<?= BASE_URL ?>/documentos">Inicio</a>
                     <a class="text-sm font-medium text-primary border-b-2 border-primary pb-0.5 dark:text-primary" href="<?= BASE_URL ?>/documentos"> Gestión </a>
-                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href="/reportes">Reportes</a>
-                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href="/configuracion">Configuración</a>
+                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href="<?= BASE_URL ?>/reportes">Reportes</a>
+                    <a class="text-sm font-medium text-imss-dark hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary" href="<?= BASE_URL ?>/configuracion">Configuración</a>
                 </nav>
                 
                 <!-- Actions & Profile -->

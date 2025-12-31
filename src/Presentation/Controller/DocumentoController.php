@@ -9,6 +9,7 @@ use App\Domain\Repository\TrabajadorRepositoryInterface;
 use App\Domain\Service\DocumentoService;
 use App\Domain\Entity\Trabajador;
 use App\Domain\Entity\Bien;
+use Exception; // <<<< AGREGADO
 
 class DocumentoController
 {
@@ -108,13 +109,13 @@ class DocumentoController
             );
 
             // Redireccionar con mensaje de éxito
-            header('Location: /documentos?success=1');
+            header('Location: ' . BASE_URL . '/documentos?success=1');
             exit;
 
         } catch (Exception $e) {
             // En caso de error, volver al formulario con mensaje
             $_SESSION['error'] = $e->getMessage();
-            header('Location: /documentos/crear');
+            header('Location: ' . BASE_URL . '/documentos/crear');
             exit;
         }
     }

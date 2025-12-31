@@ -164,7 +164,7 @@
                                                 </td>
                                                 <td class="px-6 py-4">
                                                     <div class="flex gap-2">
-                                                        <a href="/documentos/<?php echo $documento->getId(); ?>" class="text-primary hover:text-primary-dark">
+                                                        <a href="<?= BASE_URL ?>/documentos/<?php echo $documento->getId(); ?>" class="text-primary hover:text-primary-dark">
                                                             <span class="material-symbols-outlined text-[20px]">visibility</span>
                                                         </a>
                                                         <button class="text-blue-600 hover:text-blue-800">

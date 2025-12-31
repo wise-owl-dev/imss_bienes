@@ -92,7 +92,7 @@
                 <li>
                     <div class="flex items-center">
                         <span class="material-symbols-outlined text-imss-gray text-lg mx-1">chevron_right</span>
-                        <a class="text-sm font-medium text-imss-gray hover:text-primary dark:text-gray-400" href="/documentos">Gestión de Bienes</a>
+                        <a class="text-sm font-medium text-imss-gray hover:text-primary dark:text-gray-400" href="<?= BASE_URL ?>/documentos">Gestión de Bienes</a>
                     </div>
                 </li>
                 <li aria-current="page">
@@ -152,7 +152,7 @@
         </div>
 
         <!-- Form Content -->
-        <form id="documentoForm" action="/documentos/guardar" method="POST" class="space-y-8 mt-2">
+        <form id="documentoForm" action="<?= BASE_URL ?>/documentos/guardar" method="POST" class="space-y-8 mt-2">
             <!-- SECTION 1: DATOS GENERALES -->
             <section class="scroll-mt-32" id="general">
                 <div class="bg-white dark:bg-[#1e2a1e] rounded-xl shadow-sm border border-imss-border dark:border-gray-800 overflow-hidden">
@@ -370,7 +370,7 @@
     <!-- Sticky Footer Actions -->
     <div class="fixed bottom-0 left-0 w-full bg-white dark:bg-[#1e2a1e] border-t border-imss-border dark:border-gray-700 shadow-lg z-50">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-            <a href="/documentos" class="inline-flex items-center px-4 py-2 text-sm font-medium text-imss-dark bg-white border border-gray-300 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700">
+            <a href="<?= BASE_URL ?>/documentos" class="inline-flex items-center px-4 py-2 text-sm font-medium text-imss-dark bg-white border border-gray-300 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700">
                 Cancelar
             </a>
             <div class="flex items-center gap-3">

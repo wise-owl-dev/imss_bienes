@@ -11,7 +11,7 @@
     <div class="hidden lg:flex flex-col">
         <h2 class="text-xl font-bold text-text-main">Dashboard Principal</h2>
         <div class="text-xs text-text-secondary breadcrumbs flex gap-1 items-center">
-            <span>Sistema</span>
+            <a href="<?= BASE_URL ?>/" class="hover:text-primary">Sistema</a>
             <span class="material-symbols-outlined text-[10px]">chevron_right</span>
             <span class="text-primary font-medium">Inicio</span>
         </div>

@@ -50,10 +50,10 @@
         </div>
         <div class="flex items-center gap-6">
             <div class="hidden md:flex items-center gap-6">
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="/">Inicio</a>
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="/bienes">Inventario</a>
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="/reportes">Reportes</a>
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="/configuracion">Configuración</a>
+            <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="<?= BASE_URL ?>/">Inicio</a>
+            <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="<?= BASE_URL ?>/bienes">Inventario</a>
+            <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="<?= BASE_URL ?>/reportes">Reportes</a>
+            <a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="<?= BASE_URL ?>/configuracion">Configuración</a>
             </div>
             <div class="flex items-center gap-4">
                 <div class="relative hidden sm:block">
@@ -84,19 +84,19 @@
                     <div class="px-3 py-2">
                         <p class="text-xs font-bold text-text-secondary uppercase tracking-wider">Principal</p>
                     </div>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/">
                         <span class="material-symbols-outlined group-hover:text-primary">dashboard</span>
                         <span class="text-sm font-medium">Dashboard</span>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-background-light dark:bg-[#233830] text-text-main dark:text-white transition-colors" href="/bienes">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-background-light dark:bg-[#233830] text-text-main dark:text-white transition-colors" href="<?= BASE_URL ?>/bienes">
                         <span class="material-symbols-outlined text-primary fill-current">inventory_2</span>
                         <span class="text-sm font-medium">Inventario</span>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/documentos">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/documentos>
                         <span class="material-symbols-outlined group-hover:text-primary">assignment</span>
                         <span class="text-sm font-medium">Resguardos</span>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/transferencias">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/transferencias">
                         <span class="material-symbols-outlined group-hover:text-primary">move_down</span>
                         <span class="text-sm font-medium">Transferencias</span>
                     </a>
@@ -106,15 +106,15 @@
                     <div class="px-3 py-2">
                         <p class="text-xs font-bold text-text-secondary uppercase tracking-wider">Administración</p>
                     </div>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/bajas">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/bajas>
                         <span class="material-symbols-outlined group-hover:text-primary">delete</span>
                         <span class="text-sm font-medium">Bajas</span>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/usuarios">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/usuarios>
                         <span class="material-symbols-outlined group-hover:text-primary">group</span>
                         <span class="text-sm font-medium">Usuarios</span>
                     </a>
-                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="/configuracion">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-secondary hover:bg-background-light dark:hover:bg-[#233830] hover:text-text-main dark:hover:text-white transition-colors group" href="<?= BASE_URL ?>/configuracion>
                         <span class="material-symbols-outlined group-hover:text-primary">settings</span>
                         <span class="text-sm font-medium">Configuración</span>
                     </a>
@@ -137,9 +137,9 @@
             <div class="mx-auto max-w-5xl flex flex-col gap-6">
                 <!-- Breadcrumbs -->
                 <div class="flex flex-wrap gap-2 items-center text-sm">
-                    <a class="text-text-secondary hover:text-primary transition-colors" href="/">Inicio</a>
+                    <a class="text-text-secondary hover:text-primary transition-colors" href="<?= BASE_URL ?>/">Inicio</a>
                     <span class="text-text-secondary">/</span>
-                    <a class="text-text-secondary hover:text-primary transition-colors" href="/bienes">Inventario</a>
+                    <a class="text-text-secondary hover:text-primary transition-colors" href="<?= BASE_URL ?>/bienes">Inventario</a>
                     <span class="text-text-secondary">/</span>
                     <span class="text-text-main dark:text-white font-medium bg-white dark:bg-[#233830] px-2 py-0.5 rounded shadow-sm">Nuevo Registro</span>
                 </div>
@@ -205,7 +205,7 @@
 
                     <!-- Form Content -->
                     <div class="p-6 md:p-8">
-                        <form action="/bienes/guardar" method="POST" class="flex flex-col gap-8">
+                        <form action="<?= BASE_URL ?>/bienes/guardar" method="POST" class="flex flex-col gap-8">
                             <!-- Section: Basic Info -->
                             <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                                 <!-- Col 1: Main Fields -->

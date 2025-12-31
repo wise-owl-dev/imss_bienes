@@ -60,10 +60,10 @@
             
             <!-- Navigation Links -->
             <nav class="hidden md:flex items-center gap-8">
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="/">Inicio</a>
-                <a class="text-primary text-sm font-bold border-b-2 border-primary py-5" href="/bienes">Bienes</a>
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="/reportes">Reportes</a>
-                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="/trabajadores">Usuarios</a>
+                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="<?= BASE_URL ?>/">Inicio</a>
+                <a class="text-primary text-sm font-bold border-b-2 border-primary py-5" href="<?= BASE_URL ?>/bienes">Bienes</a>
+                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="<?= BASE_URL ?>/reportes">Reportes</a>
+                <a class="text-text-main dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="<?= BASE_URL ?>/trabajadores">Usuarios</a>
             </nav>
             
             <!-- User Actions -->
@@ -90,7 +90,7 @@
     <main class="flex-1 w-full max-w-[1440px] mx-auto p-6 md:p-10 flex flex-col gap-6">
         <!-- Breadcrumbs -->
         <div class="flex items-center gap-2 text-sm text-text-secondary">
-            <a class="hover:text-primary flex items-center gap-1" href="/">
+            <a class="hover:text-primary flex items-center gap-1" ref="<?= BASE_URL ?>/">
                 <span class="material-symbols-outlined text-[18px]">home</span>
                 Inicio
             </a>
@@ -116,11 +116,11 @@
                 <p class="text-text-secondary text-base">Gestione, busque y edite el inventario de activos fijos.</p>
             </div>
             <div class="flex items-center gap-3 w-full lg:w-auto">
-                <a href="/bienes/exportar<?php echo !empty($data['searchQuery']) ? '?q=' . urlencode($data['searchQuery']) : ''; ?>" class="flex-1 lg:flex-none h-10 px-4 bg-white dark:bg-surface-dark border border-border-color dark:border-[#2a382a] text-text-main dark:text-white text-sm font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-[#2a382a] flex items-center justify-center gap-2 transition-all">
+                <a href="<?= BASE_URL ?>/bienes/exportar<?php echo !empty($data['searchQuery']) ? '?q=' . urlencode($data['searchQuery']) : ''; ?>" class="flex-1 lg:flex-none h-10 px-4 bg-white dark:bg-surface-dark border border-border-color dark:border-[#2a382a] text-text-main dark:text-white text-sm font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-[#2a382a] flex items-center justify-center gap-2 transition-all">
                     <span class="material-symbols-outlined">download</span>
                     Exportar
                 </a>
-                <a href="/bienes/crear" class="flex-1 lg:flex-none h-10 px-5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow-md">
+                <a href="<?= BASE_URL ?>/bienes/crear" class="flex-1 lg:flex-none h-10 px-5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow-md">
                     <span class="material-symbols-outlined">add</span>
                     Nuevo Registro
                 </a>
@@ -128,7 +128,7 @@
         </div>
 
         <!-- Search and Filters Container -->
-        <form method="GET" action="/bienes" class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-color dark:border-[#2a382a] p-5 space-y-5">
+        <form method="GET" action="<?= BASE_URL ?>/bienes" class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-color dark:border-[#2a382a] p-5 space-y-5">
             <!-- Main Search Bar -->
             <div class="relative w-full">
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -322,10 +322,10 @@
                             </td>
                             <td class="p-4 text-right">
                                 <div class="flex items-center justify-end gap-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <a href="/bienes/<?php echo $bien->getId(); ?>" class="p-1.5 text-text-secondary hover:text-primary hover:bg-primary/10 rounded transition-colors" title="Ver detalles">
+                                    <a href="<?= BASE_URL ?>/bienes/<?php echo $bien->getId(); ?>" class="p-1.5 text-text-secondary hover:text-primary hover:bg-primary/10 rounded transition-colors" title="Ver detalles">
                                         <span class="material-symbols-outlined text-[20px]">visibility</span>
                                     </a>
-                                    <a href="/bienes/<?php echo $bien->getId(); ?>/editar" class="p-1.5 text-text-secondary hover:text-blue-600 hover:bg-blue-50 rounded transition-colors" title="Editar">
+                                    <a href="<?= BASE_URL ?>/bienes/<?php echo $bien->getId(); ?>/editar" class="p-1.5 text-text-secondary hover:text-blue-600 hover:bg-blue-50 rounded transition-colors" title="Editar">
                                         <span class="material-symbols-outlined text-[20px]">edit</span>
                                     </a>
                                 </div>
