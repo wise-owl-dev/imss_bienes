@@ -14,7 +14,7 @@
         <!-- Navigation -->
         <nav class="flex flex-col gap-2 flex-1 overflow-y-auto">
             <!-- Dashboard -->
-            <a class="flex items-center gap-3 px-4 py-3 rounded-lg <?php echo ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/dashboard') ? 'bg-primary/10 border-l-4 border-primary' : 'hover:bg-gray-50 text-text-secondary hover:text-text-main'; ?> group transition-colors" href="/">
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg <?php echo ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/dashboard') ? 'bg-primary/10 border-l-4 border-primary' : 'hover:bg-gray-50 text-text-secondary hover:text-text-main'; ?> group transition-colors" href="/imss-bienes">
                 <span class="material-symbols-outlined <?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'text-primary icon-filled' : 'group-hover:text-primary'; ?>">dashboard</span>
                 <span class="text-sm font-semibold <?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'text-primary' : ''; ?>">Inicio</span>
             </a>
@@ -26,7 +26,7 @@
             </a>
 
             <!-- Documentos -->
-            <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-text-secondary hover:text-text-main group transition-colors" href="/documentos">
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 text-text-secondary hover:text-text-main group transition-colors" href="/imss-bienes/documentos">
                 <span class="material-symbols-outlined group-hover:text-primary transition-colors">folder_open</span>
                 <span class="text-sm font-medium">Gestión Documental</span>
             </a>

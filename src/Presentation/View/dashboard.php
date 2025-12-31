@@ -68,7 +68,7 @@
                                 <span class="material-symbols-outlined text-lg">help</span>
                                 Ayuda
                             </button>
-                            <a href="/documentos/crear" class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md shadow-primary/20 transition-all flex items-center gap-2">
+                            <a href="#" class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md shadow-primary/20 transition-all flex items-center gap-2">
                                 <span class="material-symbols-outlined text-lg">add</span>
                                 Nuevo Registro
                             </a>
@@ -134,7 +134,7 @@
                     <div>
                         <h3 class="text-lg font-bold text-text-main mb-4">Acciones Rápidas</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                            <a href="/documentos/constancia" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
+                            <a href="imss-bienes/documentos/crear" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
                                 <div class="bg-gray-100 group-hover:bg-white p-3 rounded-full transition-colors shadow-sm">
                                     <span class="material-symbols-outlined text-primary text-3xl">post_add</span>
                                 </div>
@@ -144,7 +144,7 @@
                                 </div>
                             </a>
 
-                            <a href="/documentos/resguardo" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
+                            <a href="imss-bienes/documentos/crear" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
                                 <div class="bg-gray-100 group-hover:bg-white p-3 rounded-full transition-colors shadow-sm">
                                     <span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
                                 </div>
@@ -154,7 +154,7 @@
                                 </div>
                             </a>
 
-                            <a href="/documentos/prestamo" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
+                            <a href="imss-bienes/documentos/crear" class="flex flex-col items-center justify-center gap-3 bg-white hover:bg-primary-light border border-gray-200 hover:border-primary/50 rounded-xl p-6 transition-all group text-center h-40">
                                 <div class="bg-gray-100 group-hover:bg-white p-3 rounded-full transition-colors shadow-sm">
                                     <span class="material-symbols-outlined text-primary text-3xl">move_up</span>
                                 </div>
@@ -180,7 +180,7 @@
                     <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
                         <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
                             <h3 class="text-base font-bold text-text-main">Movimientos Recientes</h3>
-                            <a class="text-xs font-semibold text-primary hover:underline" href="/documentos">Ver todo</a>
+                            <a class="text-xs font-semibold text-primary hover:underline" href="/documentos/">Ver todo</a>
                         </div>
                         <div class="overflow-x-auto">
                             <table class="w-full text-left">
