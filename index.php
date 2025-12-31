@@ -11,6 +11,7 @@ $container = require __DIR__ . '/config/bootstrap.php';
 
 use App\Presentation\Controller\DashboardController;
 use App\Presentation\Controller\DocumentoController;
+use App\Presentation\Controller\BienController;
 
 // Router simple
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -103,12 +104,71 @@ switch (true) {
         echo "Trabajadores";
         break;
     
-    // Bienes
+    // Bienes - Buscar/Listar
     case $uri === '/bienes':
-        // TODO: Implementar BienController
-        echo "Bienes";
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->index();
         break;
     
+    // Bienes - Crear (GET)
+    case $uri === '/bienes/crear' && $method === 'GET':
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->crear();
+        break;
+    
+    // Bienes - Guardar (POST)
+    case $uri === '/bienes/guardar' && $method === 'POST':
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->guardar();
+        break;
+    
+    // Bienes - Exportar
+    case $uri === '/bienes/exportar':
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->exportar();
+        break;
+    
+    // Bienes - Editar (GET)
+    case preg_match('/^\/bienes\/(\d+)\/editar$/', $uri, $matches):
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->editar($matches[1]);
+        break;
+    
+    // Bienes - Actualizar (POST)
+    case preg_match('/^\/bienes\/(\d+)\/actualizar$/', $uri, $matches) && $method === 'POST':
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->actualizar($matches[1]);
+        break;
+    
+    // Bienes - Eliminar
+    case preg_match('/^\/bienes\/(\d+)\/eliminar$/', $uri, $matches):
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->eliminar($matches[1]);
+        break;
+    
+    // Bienes - Ver específico
+    case preg_match('/^\/bienes\/(\d+)$/', $uri, $matches):
+        $controller = new BienController(
+            $container['bienRepository']
+        );
+        $controller->ver($matches[1]);
+        break;
+
+        
     // Reportes
     case $uri === '/reportes':
         echo "Reportes";
